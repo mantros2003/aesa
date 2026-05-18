@@ -1,0 +1,37 @@
+/* Screen acts as the master body container */
+Screen {
+    align: center middle;  /* Flexbox centering: centers children horizontally & vertically */
+    background: $background;
+}
+
+/* The box containing our label, input, and results */
+#search-container {
+    width: 60;             /* Fixed width in character columns */
+    height: auto;          /* Adapts height based on contents */
+    background: $surface;
+    border: heavy $primary;
+    padding: 1 2;          /* Internal padding (top/bottom, left/right) */
+}
+
+#search-label {
+    width: 100%;
+    text-align: center;
+    text-style: bold;
+    margin-bottom: 1;
+    color: $accent;
+}
+
+#search-input {
+    width: 100%;
+    border: tall $secondary;
+}
+
+/* Styling the results drop-down area */
+#search-results {
+    width: 100%;
+    height: 5;
+    margin-top: 1;
+    background: $panel;
+    display: none;       /* Hidden by default, toggled in Python */
+    border: solid $secondary;
+}
