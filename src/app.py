@@ -12,7 +12,7 @@ class CenteredSearchApp(App):
     ]
 
     # Loading the CSS styles from an external string (or separate file)
-    CSS_PATH = "styles.tcss"
+    CSS_PATH = "styles/styles.tcss"
 
     def compose(self) -> ComposeResult:
         yield Header()
